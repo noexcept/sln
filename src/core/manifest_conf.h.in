@@ -5,5 +5,10 @@
 #pragma once
 
 namespace core::manifest::conf {
-constexpr char8_t* app_name = "@SLN_APP_NAME@";
+    const char* app_name = "@SLN_APP_NAME@";
+    const char* app_version_str = "@SLN_APP_VERSION_MAJOR@.@SLN_APP_VERSION_MINOR@.@SLN_APP_VERSION_PATCH@.@SLN_APP_VERSION_TWEAK@";
+    const uint32_t version_major = @SLN_APP_VERSION_MAJOR@;
+    const uint32_t version_minor = @SLN_APP_VERSION_MINOR@;
+    const uint32_t version_patch = @SLN_APP_VERSION_PATCH@;
+    const uint32_t version_tweak = @SLN_APP_VERSION_TWEAK@;
 }

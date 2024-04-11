@@ -14,11 +14,11 @@ namespace core::manifest {
         uint32_t tweak = 0;
     };
     // 应用名字
-    CORE_API constexpr char8_t* app_name();
+    CORE_API const char* app_name();
     // 应用id，用于定义appdata存放数据的根路径
-    CORE_API constexpr char8_t* app_id();
+    CORE_API const char* app_id();
     // 应用版本号
-    CORE_API constexpr char8_t* app_version_text();
+    CORE_API const char* app_version_str();
     // 应用版本号
     CORE_API version app_version();
 }

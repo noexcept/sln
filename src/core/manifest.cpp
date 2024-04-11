@@ -5,20 +5,23 @@
 #include "manifest.h"
 #include "manifest_conf.h"
 
-namespace core::manifest {
-    constexpr char8_t *app_name() {
-        return conf::app_name;
-    }
+const char *core::manifest::app_name() {
+    return conf::app_name;
+}
 
-    constexpr char8_t *app_id() {
-        return nullptr;
-    }
+const char *core::manifest::app_id() {
+    return nullptr;
+}
 
-    constexpr char8_t *app_version_text() {
-        return nullptr;
-    }
+const char *core::manifest::app_version_str() {
+    return conf::app_version_str;
+}
 
-    version app_version() {
-        return version();
-    }
+core::manifest::version core::manifest::app_version() {
+    return version{
+        .major = conf::version_major,
+        .minor = conf::version_minor,
+        .patch = conf::version_patch,
+        .tweak = conf::version_tweak
+    };
 }
