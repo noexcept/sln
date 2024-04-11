@@ -1,0 +1,9 @@
+[submodule "3rdparty/cpptrace"]
+	path = 3rdparty/cpptrace
+	url = git@github.com:noexcept/cpptrace.git
+[submodule "3rdparty/spdlog"]
+	path = 3rdparty/spdlog
+	url = git@github.com:noexcept/spdlog.git
+[submodule "3rdparty/crashpad"]
+	path = 3rdparty/crashpad
+	url = git@github.com:noexcept/crashpad.git

@@ -3,3 +3,11 @@
 //
 
 #include "log.h"
+#include "spdlog/spdlog.h"
+
+namespace core {
+
+void log::info() {
+}
+
+}

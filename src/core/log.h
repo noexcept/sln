@@ -1,15 +1,15 @@
 //
 // Created by noexcept on 2023/12/27.
 //
+#pragma once
 
-#ifndef SLN_LOG_H
-#define SLN_LOG_H
+#include "core_define.h"
 
 namespace core {
-    class log {
 
-    };
+class CORE_API log {
+public:
+    void info();
+};
+
 }
-
-
-#endif //SLN_LOG_H
