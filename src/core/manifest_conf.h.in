@@ -1,0 +1,9 @@
+/*
+ * 程序元数据
+*/
+
+#pragma once
+
+namespace core::manifest::conf {
+constexpr char8_t* app_name = "@SLN_APP_NAME@";
+}
